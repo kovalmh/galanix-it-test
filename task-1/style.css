@@ -1,0 +1,68 @@
+/* Start common styles */
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .flag-wrapper {
+        border: 1px solid gray;
+        width: 300px;
+        height: 150px;
+    }
+
+    .header {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+/* End common styles */
+
+/* Start Ukraine flag styles */
+    .ukraine {
+        background: linear-gradient(#005BBB 50%, #FFD500 50%);
+    }
+/* End Ukraine flag styles */
+
+/* Start Japan flag styles */
+    .japan {
+        background: radial-gradient(circle, #BC002D 58px, #FFF 60px);
+    }
+
+/* End Japan flag styles */
+
+/* Start Iceland flag styles */
+    .iceland {
+        background:
+                linear-gradient(#02529C,#02529C) 0 0 / 50px 50px,
+                linear-gradient(#02529C,#02529C) 0 100% / 50px 50px,
+                linear-gradient(#02529C,#02529C) 100% 0 / 205px 50px,
+                linear-gradient(#02529C,#02529C) 100% 100% / 205px 50px,
+                linear-gradient(#DC1E35,#DC1E35) 60px 0 / 25px 100%,
+                linear-gradient(#DC1E35,#DC1E35) 0 60px / 100% 25px;
+        background-repeat:no-repeat
+    }
+/* End Iceland flag styles */
+
+/* Start Czech Republic flag styles */
+    .czech-republic::before {
+        content: "";
+        position: absolute;
+        margin-top: 0;
+        width: 0;
+        height: 0;
+        border-top: 75px solid transparent;
+        border-left: 100px solid #11457E;
+        border-bottom: 75px solid transparent;
+        z-index: 2;
+    }
+    .czech-republic::after {
+        content: "";
+        position: absolute;
+        background: #D7141A;
+        margin-top: 75px;
+        width: 300px;
+        height: 75px;
+    }
+/* End Czech Republic flag styles */
