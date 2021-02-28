@@ -1,0 +1,29 @@
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .img-wrapper{
+    width: 45%;
+    height: 35vw;
+    &:hover:nth-child(1) img,
+    &:hover:nth-child(3) img,
+    &:hover:nth-child(5) img {
+      border-color: red;
+    }
+    & img {
+      height: 35vw;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .img-wrapper{
+    width: 100%;
+    height: 80vw;
+    & img {
+      height: 80vw;
+    }
+  }
+}

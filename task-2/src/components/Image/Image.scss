@@ -1,0 +1,21 @@
+.img-wrapper {
+  width: 21%;
+  height: 16vw;
+  padding: 50px 0;
+  text-align: center;
+  &:hover:nth-child(1) img,
+  &:hover:nth-child(5) img,
+  &:hover:nth-child(9) img {
+    border-color: red;
+  }
+  & img {
+    border-radius: 50%;
+    border: 5px solid gray;
+    height: 16vw;
+    &:hover {
+      transform: rotate(45deg);
+      transition: all 1s ease-out;
+      border-color: yellow;
+    }
+  }
+}
